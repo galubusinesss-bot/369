@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desparasitox | Guia Natural</title>
+  <meta name="description" content="Landing page responsiva para venda do e-book Desparasitox." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#090f25;
+      --bg2:#111a3d;
+      --card:#101936;
+      --card2:#15204a;
+      --text:#f7f8ff;
+      --muted:#b9bfd8;
+      --gold:#ffdf68;
+      --red:#ff3434;
+      --green:#13b954;
+      --green2:#0b7f3b;
+      --line:rgba(255,255,255,.74);
+      --softline:rgba(255,223,104,.25);
+      --shadow:0 20px 60px rgba(0,0,0,.38);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background: radial-gradient(circle at 50% 0%, #17204a 0%, var(--bg) 35%, #070c1c 100%);
+      color:var(--text);
+      overflow-x:hidden;
+    }
+    .page{max-width:760px;margin:0 auto;background:linear-gradient(180deg,#0b1129 0%,#0a1024 100%);min-height:100vh;border-left:1px solid rgba(255,255,255,.18);border-right:1px solid rgba(255,255,255,.18)}
+    .topbar{border:2px solid rgba(114,128,198,.55);padding:18px 16px;text-align:center;font-size:clamp(18px,4vw,28px);line-height:1.45;color:#d5daef;text-transform:uppercase;letter-spacing:.5px;background:rgba(9,15,37,.86)}
+    .topbar b{color:var(--gold)}
+    section{padding:70px 28px}.center{text-align:center}.coupon{display:inline-block;border:3px solid var(--gold);border-radius:999px;padding:20px 36px;text-transform:uppercase;letter-spacing:9px;font-weight:900;color:var(--gold);font-size:clamp(18px,4vw,28px);line-height:1.35;margin-bottom:48px}.coupon span{color:var(--red);letter-spacing:5px;margin-right:14px}.hero h1{font-family:'Playfair Display',serif;font-size:clamp(46px,10vw,76px);line-height:1.08;margin:0 auto 28px;max-width:680px}.hero .gold{color:var(--gold);font-style:italic;text-transform:uppercase}.hero .italic{font-style:italic;color:var(--gold)}.cta{display:inline-flex;justify-content:center;align-items:center;width:min(100%,680px);min-height:112px;border:none;border-radius:28px;background:linear-gradient(180deg,#22d669,#0e8c3f);box-shadow:0 0 42px rgba(19,185,84,.36), inset 0 -12px 25px rgba(0,0,0,.12);color:#fff;text-decoration:none;text-transform:uppercase;font-weight:900;font-size:clamp(25px,6vw,45px);line-height:1.18;padding:22px 28px;cursor:pointer;transition:.2s transform,.2s filter}.cta:hover{transform:translateY(-2px);filter:brightness(1.06)}
+    .countdown{display:grid;grid-template-columns:1fr;gap:56px;padding-top:28px}.time-number{font-size:clamp(82px,20vw,150px);line-height:.8;font-weight:900;color:var(--gold)}.time-label{font-size:clamp(24px,5vw,42px);color:var(--muted);font-weight:800;margin-top:14px}.timer-row{display:grid;grid-template-columns:1fr 40px;align-items:center;gap:10px}.colon{font-size:clamp(82px,17vw,130px);line-height:.8;color:var(--gold);font-weight:900}.intro{font-size:clamp(25px,5.6vw,42px);line-height:1.55;color:#cbd1e8;text-align:center;font-weight:500}.tag{display:inline-block;background:rgba(255,255,255,.12);color:#fff;border-radius:6px;padding:4px 8px;font-weight:900}.red{color:var(--red);font-style:italic;text-decoration:underline;font-weight:900}.benefits{display:grid;gap:28px}.card{background:rgba(13,19,44,.74);border:3px solid var(--line);border-radius:18px;padding:56px 26px;text-align:center;box-shadow:var(--shadow)}.card h3{margin:0 0 34px;color:var(--gold);font-size:clamp(31px,6vw,45px);line-height:1.12;text-transform:uppercase;font-weight:900}.card p{margin:0;color:#f6f7ff;font-size:clamp(25px,5.2vw,41px);line-height:1.55;font-weight:800;text-transform:uppercase}.card small{display:block;color:var(--muted);font-size:16px;text-transform:none;line-height:1.5;margin-top:24px}.text-block{font-size:clamp(24px,5.4vw,40px);line-height:1.42;text-align:center;color:#cbd1e8;font-weight:500}.text-block b{color:#fff}.product{display:flex;justify-content:center;margin-top:50px}.mockup{width:min(100%,560px);aspect-ratio:1/1;border-radius:50%;background:linear-gradient(145deg,#f6f0db,#dce7cf);border:8px solid #1a2556;box-shadow:0 24px 80px rgba(0,0,0,.42);position:relative;overflow:hidden}.book{position:absolute;right:70px;top:78px;width:245px;height:340px;background:linear-gradient(180deg,#fffaf0,#d9ecd1);border-radius:8px;box-shadow:0 14px 30px rgba(0,0,0,.25);padding:40px 18px;text-align:center;color:#31533b}.book .t1{font-family:'Playfair Display',serif;font-size:45px;color:#b48a2c;line-height:.95}.book .t2{font-family:'Playfair Display',serif;font-size:32px;color:#415740;line-height:1;margin-top:12px}.book .sub{font-size:13px;margin-top:20px;color:#486354}.tablet{position:absolute;left:56px;top:145px;width:220px;height:270px;background:#fffdf5;border:10px solid #222;border-radius:14px;color:#3e513d;padding:22px 16px;text-align:left;font-size:12px}.phone{position:absolute;left:210px;bottom:66px;width:120px;height:210px;background:#fdfdf6;border:8px solid #222;border-radius:22px;color:#3e513d;text-align:center;padding:26px 8px;font-size:10px}.expect h2,.testimonials h2{font-family:'Playfair Display',serif;font-size:clamp(43px,9vw,70px);line-height:1.15;text-align:center;margin:0 0 30px}.expect h2 em,.testimonials h2 em{color:var(--gold)}.lead{font-size:clamp(26px,5.4vw,42px);line-height:1.42;color:#cbd1e8;text-align:center}.timeline{display:grid;gap:26px}.day-card{background:linear-gradient(180deg,rgba(25,35,80,.8),rgba(18,27,61,.9));border:3px solid rgba(86,100,180,.55);border-radius:36px;padding:42px 28px;text-align:center}.day-card h3{font-family:'Playfair Display',serif;color:var(--gold);font-size:clamp(40px,8vw,65px);margin:0 0 26px}.day-card p{font-size:clamp(24px,5vw,38px);line-height:1.5;color:#c8cde5;font-weight:800;margin:0}.testimonials .sub{font-size:clamp(27px,5vw,42px);line-height:1.35;text-align:center;color:#cbd1e8}.dep-grid{display:grid;gap:22px;margin-top:40px}.dep{border:1px solid rgba(255,255,255,.2);border-radius:18px;background:rgba(255,255,255,.04);padding:24px}.dep strong{font-size:20px}.dep p{color:#d7dbee;line-height:1.6;margin:12px 0 0}.offer{background:linear-gradient(180deg,rgba(255,223,104,.08),rgba(19,185,84,.1));border-top:1px solid var(--softline);border-bottom:1px solid var(--softline)}.price{font-size:clamp(58px,13vw,96px);font-weight:900;color:var(--gold);margin:14px 0}.old{text-decoration:line-through;color:#aeb4ca;font-size:26px}.secure{color:#c8cde5;line-height:1.6;font-size:16px;margin-top:18px}.faq details{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:18px 20px;margin:12px 0}.faq summary{font-weight:800;cursor:pointer}.faq p{color:#cbd1e8;line-height:1.6}.footer{padding:34px 24px;text-align:center;color:#9da6c8;font-size:13px;line-height:1.6}.sticky{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;width:min(calc(100% - 28px),700px);z-index:20}.sticky .cta{min-height:64px;border-radius:18px;font-size:22px}.reveal{opacity:0;transform:translateY(24px);transition:opacity .65s ease, transform .65s ease}.reveal.show{opacity:1;transform:translateY(0)}
+    .guarantee-card{border:4px solid #19c65b;border-radius:34px;background:rgba(21,32,74,.55);padding:48px 38px;box-shadow:0 0 48px rgba(19,185,84,.18)}.seal{width:260px;height:260px;border-radius:50%;margin:0 auto 48px;background:radial-gradient(circle at 50% 50%,#101936 0 30%,#18c65a 31% 70%,#101936 71% 78%,#18c65a 79% 83%,transparent 84%);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:900;font-size:30px;line-height:1.15}.seal .redtxt{color:var(--red)}.guarantee-card h2{font-family:'Playfair Display',serif;color:#22d669;font-size:clamp(44px,9vw,68px);line-height:1.28;margin:0 0 32px}.guarantee-card p{font-size:clamp(26px,5.2vw,42px);line-height:1.55;color:#f7f8ff;margin:0}.guarantee-card mark{background:transparent;color:#fff900;font-weight:900}.guarantee-card b{font-weight:900}
+    @media (min-width:680px){.dep-grid{grid-template-columns:1fr 1fr}.countdown{grid-template-columns:repeat(4,1fr);gap:14px}.timer-row{display:block}.colon{display:none}.sticky{display:none}}
+    @media (max-width:520px){section{padding:58px 18px}.coupon{letter-spacing:5px;padding:16px 20px}.card{padding:42px 18px}.mockup{transform:scale(.95)}.book{right:36px;width:195px;height:290px}.tablet{left:26px;width:178px}.phone{left:154px}.hero h1{font-size:48px}.topbar{font-size:18px}.intro,.text-block{font-size:26px}.cta{min-height:96px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="topbar">★ <b>DESPARASITOX</b> · Cure seu apetite e naturalmente reduza os doces da cozinha.</div>
+
+    <section class="hero center reveal">
+      <div class="coupon">DESPARASITOX<br><span>50%</span>DE DESCONTO</div>
+      <h1>veja a lista de receitas do <span class="gold">DESPARASITOX</span> hoje mesmo e tome o <span class="italic">controle de volta</span> do seu peso!</h1>
+      <a class="cta" href="#oferta">Adquira sua limpeza</a>
+    </section>
+
+    <section class="center reveal" aria-label="Contador de oferta">
+      <div class="countdown" id="countdown">
+        <div class="timer-row"><div><div class="time-number" id="days">00</div><div class="time-label">Days</div></div><div class="colon">:</div></div>
+        <div class="timer-row"><div><div class="time-number" id="hours">00</div><div class="time-label">Hours</div></div><div class="colon">:</div></div>
+        <div class="timer-row"><div><div class="time-number" id="minutes">00</div><div class="time-label">Minutes</div></div><div class="colon">:</div></div>
+        <div class="timer-row"><div><div class="time-number" id="seconds">00</div><div class="time-label">Seconds</div></div></div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <p class="intro"><span class="tag">DESPARASITOX</span> é um guia natural criado para te ajudar a organizar uma rotina alimentar mais leve, com receitas simples e ingredientes do dia a dia. Uma alternativa prática para quem quer reduzir exageros, apoiar o intestino e recuperar a sensação de controle.</p>
+    </section>
+
+    <section class="benefits reveal">
+      <article class="card">
+        <h3>BENEFÍCIO MENTAL</h3>
+        <p>BENEFICIOS MENTAIS<br>—GERA LEVEZA,<br>CLAREZA E<br>ENERGIA POIS OS<br>PARASITAS<br>CEREBRAIS<br>PODEM CAUSAR<br>FOME,<br>CONFUSÃO E<br>FADIGA.</p>
+      </article>
+      <div style="text-align:center;color:#fff;font-size:42px;font-weight:900;line-height:1;">✓</div>
+      <article class="card">
+        <h3>BENEFÍCIO ESTÉTICO</h3>
+        <p>— ELIMINA<br>INCHAÇOS<br>PERSISTENTES<br>NA PAPADA,<br>BRAÇOS,<br>ABDOMINAL E<br>CINTURA.</p>
+      </article>
+      <div style="text-align:center;color:#fff;font-size:42px;font-weight:900;line-height:1;">✓</div>
+      <article class="card">
+        <h3>BENEFÍCIO INTESTINAL</h3>
+        <p>ELIMINA<br>INCHAÇOS<br>INEXPLICÁVEIS<br>NA PAPADA,<br>BRAÇOS,<br>ABDOMINAL E<br>CINTURA.</p>
+      </article>
+    </section>
+
+    <section class="reveal">
+      <p class="text-block">Em vez de soluções sintéticas que podem deixar você desconfortável, <span class="tag">DESPARASITOX</span> trabalha com o ritmo natural do seu corpo, usando <b>ingredientes naturais</b>, rotina simples e um passo a passo fácil de seguir.</p>
+      <div class="product" aria-label="Mockup do produto">
+        <div class="mockup">
+          <div class="tablet"><b>RECEITA NATURAL</b><br><br>Xarope de alho, limão e ervas<br><br>Ingredientes simples<br>Modo de preparo<br>Dica extra</div>
+          <div class="book"><div class="t1">DETOX<br>NATURAL</div><div class="t2">PARA<br>PARASITAS</div><div class="sub">Guia prático com receitas naturais e rotina alimentar para apoiar o equilíbrio intestinal</div></div>
+          <div class="phone"><b>SUA ROTINA</b><br><br>Passo a passo<br>Receitas<br>Calendário<br>Orientações</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="expect reveal">
+      <a class="cta" href="#oferta">Adquira sua limpeza</a>
+      <h2>O que você pode esperar com o <em>DESPARASITOX</em></h2>
+      <p class="lead">Retomada de escolha da própria saúde e corpo através de benefícios listados de forma prática dentro do e-book.</p>
+    </section>
+
+    <section class="timeline reveal">
+      <div class="day-card"><h3>Em 7 dias</h3><p>Comece tomando as receitas conforme descritas no e-book. Use ao acordar e acompanhe a sensação de leveza nos primeiros dias.</p></div>
+      <div class="day-card"><h3>Em 14 dias</h3><p>Organize a rotina alimentar, reduza excessos e mantenha constância com as listas de receitas e ingredientes.</p></div>
+      <div class="day-card"><h3>Em 28 dias</h3><p>Complete o ciclo do guia e compare sua disposição, inchaço e disciplina alimentar com o início da rotina.</p></div>
+    </section>
+
+    <section class="testimonials reveal">
+      <h2>Conheça <em>alguns clientes</em> e seus relatos</h2>
+      <p class="sub">Depoimentos ilustrativos. Resultados individuais variam.</p>
+      <div class="dep-grid">
+        <div class="dep"><strong>Mariana A. · Compra verificada</strong><p>Gostei porque é simples. Consegui seguir sem ingredientes caros e senti que fiquei mais organizada com minha alimentação.</p></div>
+        <div class="dep"><strong>Cláudia R. · Compra verificada</strong><p>O guia me ajudou a parar de improvisar. As receitas são diretas e fáceis de colocar na rotina.</p></div>
+        <div class="dep"><strong>Patrícia M. · Compra verificada</strong><p>Usei como apoio para uma fase de reeducação. A parte de lista de ingredientes facilitou bastante.</p></div>
+        <div class="dep"><strong>Rosana T. · Compra verificada</strong><p>Gostei do formato digital e do passo a passo. Ficou fácil consultar pelo celular.</p></div>
+      </div>
+    </section>
+
+    <section class="offer center reveal" id="oferta">
+      <h2 style="font-family:'Playfair Display',serif;font-size:52px;margin:0 0 10px">Oferta especial</h2>
+      <div class="old">De R$ 97,00</div>
+      <div class="price">R$ 27,90</div>
+      <p class="lead">Acesso imediato ao e-book digital com receitas, ingredientes, modo de preparo e rotina de uso.</p>
+      <a class="cta" href="https://SEU-LINK-DE-CHECKOUT-AQUI.com">Quero acessar agora</a>
+      <p class="secure">Pagamento seguro. Entrega digital por e-mail. Este material é educativo e não substitui orientação médica, diagnóstico ou tratamento profissional.</p>
+    </section>
+
+    <section class="guarantee reveal">
+      <div class="guarantee-card">
+        <div class="seal"><span><span class="redtxt">7</span> DIAS para<br>GARANTIA<span class="redtxt">!</span></span></div>
+        <h2>Garantia<br>incondicional<br>de 7 dias</h2>
+        <p>Você tem <mark>DESPARASITOX</mark> por<br><b>7 dias</b> pra testar.<br>Se não gostar, por qualquer motivo, basta entrar em contato pelo whatsapp. — devolvemos <b>100% do valor pago</b>, sem perguntas, sem complicação. <b>O risco é todo nosso.</b></p>
+      </div>
+    </section>
+
+    <section class="faq reveal">
+      <h2 class="center" style="font-size:38px">Perguntas frequentes</h2>
+      <details><summary>Recebo o produto na hora?</summary><p>Sim. Após a confirmação do pagamento, o acesso ao material digital pode ser enviado por e-mail ou pela plataforma de checkout.</p></details>
+      <details><summary>Preciso comprar ingredientes caros?</summary><p>Não. A proposta é usar ingredientes simples e comuns de cozinha, com preparo prático.</p></details>
+    </section>
+
+    <footer class="footer">© 2026 Desparasitox. Página demonstrativa baseada nos prints enviados. Resultados individuais variam. Não fazemos promessa de cura, emagrecimento garantido ou eliminação de doenças.</footer>
+  </main>
+
+  <div class="sticky"><a class="cta" href="#oferta">Adquira sua limpeza</a></div>
+
+  <script>
+    const countdownHours = 6;
+    const KEY = 'desparasitox_deadline';
+    let deadline = localStorage.getItem(KEY);
+    if(!deadline || Number(deadline) < Date.now()){
+      deadline = Date.now() + countdownHours * 60 * 60 * 1000;
+      localStorage.setItem(KEY, deadline);
+    }
+    function pad(n){ return String(n).padStart(2,'0'); }
+    function updateTimer(){
+      const diff = Math.max(0, Number(deadline) - Date.now());
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      document.getElementById('days').textContent = pad(d);
+      document.getElementById('hours').textContent = pad(h);
+      document.getElementById('minutes').textContent = pad(m);
+      document.getElementById('seconds').textContent = pad(s);
+    }
+    updateTimer(); setInterval(updateTimer, 1000);
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('show'); });
+    }, {threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
